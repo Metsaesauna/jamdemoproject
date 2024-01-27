@@ -58,7 +58,7 @@ public class CharacterController2D : MonoBehaviour
         {
             //we reset velocity before dashing to let PlayerDash handle all of the physics for the duration of the dash
             velocity = Vector2.zero;
-            //we set dashCooldown to true and the Timer to the value of cooldownTimer
+            //we set dashCooldown to true and the Timer to the value of cooldownTimer, then call for Dash
             dashCooldown = true;
             Timer = cooldownTimer;
             GetComponent<PlayerDash>().Dash();

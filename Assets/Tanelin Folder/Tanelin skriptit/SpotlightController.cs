@@ -25,9 +25,9 @@ public class SpotlightController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //calculate the new intensity using the velocity of the player. Keep it in a range of 0-100
+        //calculate the new intensity using the velocity of the player. Keep it in a range of 1-100
         float xVelocity = playerRB2D.velocity.x;
-        float adjustedFalloff = Mathf.Clamp(Mathf.Abs(xVelocity) * xVelocityMultiplier * falloffMultiplier, 0f, 100f);
+        float adjustedFalloff = Mathf.Clamp(Mathf.Abs(xVelocity) * xVelocityMultiplier * falloffMultiplier, 1f, 100f);
 
         //adjust the specific slider on the spotlight
         spotlight.shapeLightFalloffSize = adjustedFalloff;

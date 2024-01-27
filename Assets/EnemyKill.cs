@@ -3,25 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//Authors: Taneli Niskanen & Jones Manninen
 public class EnemyKill : MonoBehaviour
 {
     
-    //Vihollinen katsoo osuuko siihen.
+    //The enemy checks wheter or not they are hit.
     private void OnTriggerEnter2D(Collider2D other)
     {
-        //Jos osuma tulee pelaajasta, jatketaan ensimmäisen returnin yli. Jos ei, palataan alkuun.
+        //If the hit is with a player, we continue.If not, we return to the start.
         if (other.CompareTag("Player") == false)
         {
             return;
         }
-        //Haetaan PlayerDash -skriptistä komponentit, joilla voidaan katsoa onko pelaaja keskellä dashia.
+        //We acces PlayerDash to get components we can use to determine if player is dashing.
         PlayerDash playerDash = other.GetComponent<PlayerDash>();
-        // Jos ollaan dashaamassa niin ei jatketa pidemmälle returnista
+        // If we are dashing, we use return to go back to start.
         if (Time.time < playerDash.DashStartedTime + playerDash.DashLength)
         {
             return;
         }
-        //Jos pelaaja ei dashaa, tapetaan pelaaja.
+        //In case the player is not dashing, we kill the player.
         Debug.Log("Vihu Osuu Pelaajaan");
         SceneManager.LoadScene(0);
     }
