@@ -161,7 +161,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -290,7 +290,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -345,13 +345,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2109637773554790794, guid: 3397ec9d3ec9e434493aedf29018d829, type: 3}
-      propertyPath: m_BodyType
+    - target: {fileID: 732439067603107368, guid: 3397ec9d3ec9e434493aedf29018d829, type: 3}
+      propertyPath: m_Enabled
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2109637773554790794, guid: 3397ec9d3ec9e434493aedf29018d829, type: 3}
-      propertyPath: m_Constraints
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5638063680347171905, guid: 3397ec9d3ec9e434493aedf29018d829, type: 3}
       propertyPath: m_LocalPosition.x
@@ -393,42 +389,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7163516710916630149, guid: 3397ec9d3ec9e434493aedf29018d829, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7966556273354376728, guid: 3397ec9d3ec9e434493aedf29018d829, type: 3}
       propertyPath: m_Name
       value: TempCharacter
       objectReference: {fileID: 0}
-    - target: {fileID: 8465439497014349858, guid: 3397ec9d3ec9e434493aedf29018d829, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7966556273354376728, guid: 3397ec9d3ec9e434493aedf29018d829, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2136021883}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3397ec9d3ec9e434493aedf29018d829, type: 3}
---- !u!1 &2136021875 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7966556273354376728, guid: 3397ec9d3ec9e434493aedf29018d829, type: 3}
-  m_PrefabInstance: {fileID: 2008752339}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2136021883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2136021875}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90f33f72d752b22478257c86b234a58a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DashDistance: 20
-  DashForce: 10000
-  isDashing: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
