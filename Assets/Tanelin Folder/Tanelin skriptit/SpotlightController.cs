@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
-
+//Author: Taneli Niskanen
 public class SpotlightController : MonoBehaviour
 {
     //define the floats and make them public for easy tweaking in editor
     public float xVelocityMultiplier = 1.0f;
     public float falloffMultiplier = 1.0f;
 
-    //name these so we can get them from the gameobjects
+    //name these so we can get them from the gameobjects. Note that "Light2D" is different than "Light"
     private Rigidbody2D playerRB2D;
     private Light2D spotlight;
 
@@ -29,6 +29,7 @@ public class SpotlightController : MonoBehaviour
         float xVelocity = playerRB2D.velocity.x;
         float adjustedFalloff = Mathf.Clamp(Mathf.Abs(xVelocity) * xVelocityMultiplier * falloffMultiplier, 0f, 100f);
 
+        //adjust the specific slider on the spotlight
         spotlight.shapeLightFalloffSize = adjustedFalloff;
         
     }

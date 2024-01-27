@@ -32,10 +32,12 @@ public class CharacterController2D : MonoBehaviour
     public float moveInput;
     public bool grounded;
     
+    
     private void Awake()
     {
         boxCollider = GetComponent<BoxCollider2D>();
         rb2d = GetComponent<Rigidbody2D>();
+        
         
     }
     
@@ -50,6 +52,7 @@ public class CharacterController2D : MonoBehaviour
         }
       if (Input.GetMouseButtonDown(0))
         {
+            velocity = Vector2.zero;
             GetComponent<PlayerDash>().Dash();
         }
         //We allow jumping only if grounded.
@@ -73,7 +76,7 @@ public class CharacterController2D : MonoBehaviour
         float deceleration = grounded ? groundDeceleration : 0;
 
 
-        // We check the value of moveInput, and separate acceleration/deceleration for when we are moving and when we are not.
+        // We check the value of moveInput, and separate acceleration/deceleration for when we are pressing movement keys and when we are not.
         if (moveInput != 0)
         {
             velocity.x = Mathf.MoveTowards(velocity.x, MaxSpeed * moveInput, acceleration * Time.deltaTime);
