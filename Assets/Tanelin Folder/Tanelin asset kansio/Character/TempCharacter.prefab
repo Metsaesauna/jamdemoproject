@@ -332,8 +332,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0049000084, y: 0.0042999983, z: 0}
-    m_Extent: {x: 1.0038, y: 0.9985, z: 0}
+    m_Center: {x: 0.00045001507, y: 0.0076000094, z: 0}
+    m_Extent: {x: 0.99345, y: 0.9982, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -510,6 +510,8 @@ MonoBehaviour:
   velocity: {x: 0, y: 0}
   moveInput: 0
   grounded: 0
+  dashCooldown: 0
+  cooldownTimer: 1.5
 --- !u!114 &8529023954225294021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -523,7 +525,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DashDistance: 20
-  DashForce: 5
+  DashForce: 100
+  originalBlade: {fileID: 6920177715744399062, guid: 5c138dcdc18fd3042accb1633665015a, type: 3}
 --- !u!114 &732439067603107368
 MonoBehaviour:
   m_ObjectHideFlags: 0

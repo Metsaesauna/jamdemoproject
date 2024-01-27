@@ -31,6 +31,9 @@ public class CharacterController2D : MonoBehaviour
     
     public float moveInput;
     public bool grounded;
+    public bool dashCooldown = false;
+    public float cooldownTimer = 1.5f;
+    private float Timer;
     
     
     private void Awake()
@@ -50,10 +53,28 @@ public class CharacterController2D : MonoBehaviour
         {
             velocity.y += Physics2D.gravity.y * Time.deltaTime;
         }
-      if (Input.GetMouseButtonDown(0))
+        //we call the Dash function from PlayerDash if we press the left mouse button and dashCooldown is false
+      if (Input.GetMouseButtonDown(0) && !dashCooldown)
         {
+            //we reset velocity before dashing to let PlayerDash handle all of the physics for the duration of the dash
             velocity = Vector2.zero;
+            //we set dashCooldown to true and the Timer to the value of cooldownTimer
+            dashCooldown = true;
+            Timer = cooldownTimer;
             GetComponent<PlayerDash>().Dash();
+            
+        }
+      //we check if dashCooldown is true
+      if (dashCooldown == true)
+        {
+            //start subtracting actual time from timer
+            Timer -= Time.deltaTime;
+            //if timer reaches or bypasses 0, we set dashCooldown to false
+            if (Timer <= 0f)
+            {
+                dashCooldown = false;
+                Debug.Log("Cooldown elapsed");
+            }
         }
         //We allow jumping only if grounded.
         if (grounded)
