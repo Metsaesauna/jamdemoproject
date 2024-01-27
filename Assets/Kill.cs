@@ -9,6 +9,7 @@ using UnityEngine;
         {
             if (other.CompareTag("Enemy"))
             {
+                
                 Destroy(other.gameObject); // Destroy the enemy GameObject
             }
         }

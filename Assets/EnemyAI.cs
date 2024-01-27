@@ -37,7 +37,7 @@ public class EnemyAI : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            // Player detected, set the target to the player's transform
+            
             Player = collision.transform;
         }
     }
