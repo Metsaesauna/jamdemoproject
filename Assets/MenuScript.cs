@@ -1,0 +1,54 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEditor.SearchService;
+using UnityEngine;
+using System.ComponentModel;
+using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
+
+public class MenuScript : MonoBehaviour
+{
+    Button buttonStartGame;
+    Button buttonCredits;
+    Button buttonExit;
+
+    // Start is called before the first frame update
+    public void Awake()
+    {
+        var root = GetComponent<UIDocument>().rootVisualElement;
+
+        buttonStartGame = root.Q<Button>("StartGame");
+        buttonExit = root.Q<Button>("QuitGame");
+        buttonCredits = root.Q<Button>("Credits");
+
+
+        buttonStartGame.clicked += StartGame;
+        buttonCredits.clicked += ShowCredits;
+        buttonExit.clicked += ExitGame;
+    }
+
+    public void BackToMenu()
+    {
+        Debug.Log("Going back to main");
+        SceneManager.LoadScene("MainMenu");
+    }
+    private void StartGame()
+    {
+        Debug.Log("Starting game now");
+        SceneManager.LoadScene("Level1");
+    }
+
+    private void ShowCredits()
+    {
+        Debug.Log("Showing credits now");
+        SceneManager.LoadScene("Credits");
+    }
+
+    private void ExitGame()
+    {
+        Debug.Log("Quitting Game");
+        Application.Quit();
+    }
+
+
+}
