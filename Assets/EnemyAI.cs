@@ -37,7 +37,7 @@ public class EnemyAI : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("Toimiiks?");
+            
             Player = collision.transform;
         }
     }
