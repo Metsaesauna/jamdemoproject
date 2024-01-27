@@ -11,6 +11,7 @@ public class MenuScript : MonoBehaviour
     Button buttonStartGame;
     Button buttonCredits;
     Button buttonExit;
+    Slider VolumeMaster;
 
     // Start is called before the first frame update
     public void Awake()
@@ -20,11 +21,13 @@ public class MenuScript : MonoBehaviour
         buttonStartGame = root.Q<Button>("StartGame");
         buttonExit = root.Q<Button>("QuitGame");
         buttonCredits = root.Q<Button>("Credits");
+        VolumeMaster = root.Q<Slider>("MasterAudioSlider");
 
 
         buttonStartGame.clicked += StartGame;
         buttonCredits.clicked += ShowCredits;
         buttonExit.clicked += ExitGame;
+        
     }
 
     public void BackToMenu()

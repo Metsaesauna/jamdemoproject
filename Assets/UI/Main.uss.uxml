@@ -1,10 +1,10 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/MainMenu.uss?fileID=7433441132597879392&amp;guid=10b89f7ec665c694b939f3391d0d531a&amp;type=3#MainMenu" />
     <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 513px; width: 1101px;">
-        <ui:Label tabindex="-1" text="GAME TITLE" display-tooltip-when-elided="true" name="GameTitle" style="position: absolute; top: 31px; left: 304px; font-size: 72px;" />
+        <ui:Label tabindex="-1" text="DARKEST DASHER" display-tooltip-when-elided="true" name="GameTitle" style="position: absolute; top: 28px; left: 226px; font-size: 72px;" />
         <ui:Button text="Start Game" display-tooltip-when-elided="true" name="StartGame" style="transform-origin: center; position: absolute; top: 182px; left: 457px; -unity-text-align: lower-right; white-space: nowrap; -unity-background-image-tint-color: rgb(56, 56, 56);" />
         <ui:Button text="Quit Game" display-tooltip-when-elided="true" name="QuitGame" style="position: absolute; top: 288px; left: 462px; -unity-background-image-tint-color: rgb(56, 56, 56);" />
         <ui:Button text="Credits" display-tooltip-when-elided="true" name="Credits" style="position: absolute; top: 427px; left: 846px;" />
-        <ui:Slider picking-mode="Ignore" label="Audio Volume" value="25" high-value="100" name="Slider" style="position: absolute; top: 447px; left: 25px; width: 347px; height: 39px;" />
+        <ui:Slider picking-mode="Ignore" label="Audio Volume" value="25" high-value="100" name="MasterAudioSlider" show-input-field="true" style="position: absolute; top: 447px; left: 25px; width: 347px; height: 39px;" />
     </ui:VisualElement>
 </ui:UXML>
