@@ -345,10 +345,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 732439067603107368, guid: 3397ec9d3ec9e434493aedf29018d829, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5638063680347171905, guid: 3397ec9d3ec9e434493aedf29018d829, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -389,21 +385,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7163516710916630149, guid: 3397ec9d3ec9e434493aedf29018d829, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7966556273354376728, guid: 3397ec9d3ec9e434493aedf29018d829, type: 3}
       propertyPath: m_Name
       value: TempCharacter
-      objectReference: {fileID: 0}
-    - target: {fileID: 8529023954225294021, guid: 3397ec9d3ec9e434493aedf29018d829, type: 3}
-      propertyPath: DashForce
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8529023954225294021, guid: 3397ec9d3ec9e434493aedf29018d829, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

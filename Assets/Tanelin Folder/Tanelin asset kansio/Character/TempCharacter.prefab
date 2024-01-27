@@ -332,8 +332,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.006549984, y: -0.0013000071, z: 0}
-    m_Extent: {x: 0.99815, y: 0.99600005, z: 0}
+    m_Center: {x: -0.0049000084, y: 0.0042999983, z: 0}
+    m_Extent: {x: 1.0038, y: 0.9985, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -517,14 +517,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7966556273354376728}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90f33f72d752b22478257c86b234a58a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   DashDistance: 20
-  DashForce: 10000
-  isDashing: 0
+  DashForce: 5
 --- !u!114 &732439067603107368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -537,6 +536,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32217551b5977f64882a9bce834796b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xVelocityMultiplier: 1
+  falloffMultiplier: 1
 --- !u!1 &7982632761904503047
 GameObject:
   m_ObjectHideFlags: 0
