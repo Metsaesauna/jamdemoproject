@@ -6,6 +6,8 @@ using System.ComponentModel;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
+
+//Author: Taneli Niskanen (no comments for this script, pretty self-explanatory.
 public class MenuScript : MonoBehaviour
 {
     Button buttonStartGame;
@@ -14,9 +16,9 @@ public class MenuScript : MonoBehaviour
     Slider VolumeMaster;
 
     // Start is called before the first frame update
-    public void Awake()
+    public void Start()
     {
-        var root = GetComponent<UIDocument>().rootVisualElement;
+        VisualElement root = GetComponent<UIDocument>().rootVisualElement;
 
         buttonStartGame = root.Q<Button>("StartGame");
         buttonExit = root.Q<Button>("QuitGame");
