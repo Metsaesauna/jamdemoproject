@@ -15,10 +15,7 @@ public class Bullet : MonoBehaviour
 
         GetComponent<Rigidbody2D>().velocity = transform.right * speed;
 
-        if (Time.time >= 1f)
-        {
-            //Destroy(gameObject);
-        }
+       
     }
     
 

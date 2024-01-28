@@ -34,6 +34,8 @@ public class RangedAI : MonoBehaviour
             Player = collision.transform;
             Shoot();
 
+            nextFireTime = Time.time + 1f / fireRate;
+
 
         }
 
