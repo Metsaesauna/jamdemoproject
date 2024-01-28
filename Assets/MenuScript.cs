@@ -6,6 +6,8 @@ using System.ComponentModel;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
+
+//Author: Taneli Niskanen (no comments for this script, pretty self-explanatory.
 public class MenuScript : MonoBehaviour
 {
     Button buttonStartGame;
