@@ -24,7 +24,7 @@ public class EnemyKill : MonoBehaviour
         }
         //In case the player is not dashing, we kill the player.
         Debug.Log("Vihu Osuu Pelaajaan");
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("GameOver");
     }
     
 }
