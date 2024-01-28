@@ -11,6 +11,7 @@ using UnityEngine;
             {
                 
                 Destroy(other.gameObject); // Destroy the enemy GameObject
+
             }
         }
     }
