@@ -16,7 +16,8 @@ public class PlayerDash : MonoBehaviour
     private CharacterController2D moveScript;
     public float DashLength = 0.1f;
     public float DashStartedTime;
-
+    public AudioClip dashAudio;
+    private AudioSource playerSource;
     
     private void Awake()
     {
@@ -24,7 +25,7 @@ public class PlayerDash : MonoBehaviour
         cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         rb2d = GetComponent<Rigidbody2D>();
         moveScript = GetComponent<CharacterController2D>();
-
+        playerSource = GetComponent<AudioSource>();
     }
     public void Dash()
     {
@@ -36,6 +37,7 @@ public class PlayerDash : MonoBehaviour
         //find mouse position and translate into 2D direction
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
         rotation = ((Vector2)mousePos - (Vector2)transform.position).normalized;
+        playerSource.Play();
 
 
     }
