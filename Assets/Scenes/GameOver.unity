@@ -189,8 +189,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0035500526, y: 0.0041999817, z: 0}
-    m_Extent: {x: 4.49765, y: 4.4994, z: 0}
+    m_Center: {x: -0.0036001205, y: -0.00085020065, z: 0}
+    m_Extent: {x: 4.5046, y: 4.49895, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -316,8 +316,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 916353530}
-        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
+      - m_Target: {fileID: 916353534}
+        m_TargetAssemblyTypeName: SubMenuScript, Assembly-CSharp
         m_MethodName: BackToMenu
         m_Mode: 1
         m_Arguments:
@@ -698,7 +698,7 @@ GameObject:
   - component: {fileID: 916353533}
   - component: {fileID: 916353532}
   - component: {fileID: 916353531}
-  - component: {fileID: 916353530}
+  - component: {fileID: 916353534}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -706,18 +706,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &916353530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 916353529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2cdadc818608d0478e3ed93fab89e81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &916353531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -768,6 +756,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &916353534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916353529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2dedf636addb2241ad9889e120ec138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &919498875
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,8 +851,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 916353530}
-        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
+      - m_Target: {fileID: 916353534}
+        m_TargetAssemblyTypeName: SubMenuScript, Assembly-CSharp
         m_MethodName: ExitGame
         m_Mode: 1
         m_Arguments:

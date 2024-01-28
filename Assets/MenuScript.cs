@@ -16,9 +16,9 @@ public class MenuScript : MonoBehaviour
     Slider VolumeMaster;
 
     // Start is called before the first frame update
-    public void Awake()
+    public void Start()
     {
-        var root = GetComponent<UIDocument>().rootVisualElement;
+        VisualElement root = GetComponent<UIDocument>().rootVisualElement;
 
         buttonStartGame = root.Q<Button>("StartGame");
         buttonExit = root.Q<Button>("QuitGame");
