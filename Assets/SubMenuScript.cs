@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// Author: Taneli Niskanen (I had to make this script because Unity UI Builder is stupid)
 public class SubMenuScript : MonoBehaviour
 {
 
