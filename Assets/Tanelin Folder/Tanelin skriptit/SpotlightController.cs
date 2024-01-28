@@ -7,7 +7,7 @@ using UnityEngine.Rendering.Universal;
 public class SpotlightController : MonoBehaviour
 {
     //define the floats and make them public for easy tweaking in editor
-    public float xVelocityMultiplier = 1.2f;
+    public float xVelocityMultiplier = 1.5f;
     public float falloffMultiplier = 1.0f;
  
 
