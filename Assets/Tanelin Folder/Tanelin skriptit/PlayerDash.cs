@@ -11,8 +11,8 @@ public class PlayerDash : MonoBehaviour
     private Camera cam;
     private Vector3 mousePos;
     public float DashDistance = 20f;
-    public float DashForce = 100;
-    private Vector2 rotation;
+    public float DashForce = 50;
+    public Vector2 rotation;
     private CharacterController2D moveScript;
     public float DashLength = 0.1f;
     public float DashStartedTime;
@@ -33,7 +33,7 @@ public class PlayerDash : MonoBehaviour
         //check when dash started (was called) and save that time into a float
         DashStartedTime = Time.time;
         //disable charcontroller so no other forces apply
-        moveScript.enabled = false;
+       // moveScript.enabled = false;
         //find mouse position and translate into 2D direction
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
         rotation = ((Vector2)mousePos - (Vector2)transform.position).normalized;
@@ -56,7 +56,8 @@ public class PlayerDash : MonoBehaviour
         {
 
             //when over, we enable charcontroller again
-            moveScript.enabled = true;
+          //  moveScript.enabled = true;
+            
         }
 
     }

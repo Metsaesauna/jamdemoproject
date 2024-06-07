@@ -56,7 +56,7 @@ public class CharacterController2D : MonoBehaviour
       if (Input.GetMouseButtonDown(0) && !dashCooldown)
         {
             //we reset velocity before dashing to let PlayerDash handle all of the physics for the duration of the dash
-            velocity = Vector2.zero;
+           // velocity = Vector2.zero;
             //we set dashCooldown to true and the Timer to the value of cooldownTimer, then call for Dash
             dashCooldown = true;
             Timer = cooldownTimer;
@@ -114,6 +114,7 @@ public class CharacterController2D : MonoBehaviour
         {
             //we see ground! grounded is true
             grounded = true;
+            
         }
         else 
         {
