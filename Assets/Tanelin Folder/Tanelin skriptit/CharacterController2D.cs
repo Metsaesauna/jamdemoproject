@@ -33,6 +33,8 @@ public class CharacterController2D : MonoBehaviour
     public bool dashCooldown = false;
     public float cooldownTimer = 1.5f;
     private float Timer;
+    public GameObject DashPointerAva;
+    public GameObject DashPointerNava;
     
     
     private void Awake()
@@ -59,6 +61,8 @@ public class CharacterController2D : MonoBehaviour
            // velocity = Vector2.zero;
             //we set dashCooldown to true and the Timer to the value of cooldownTimer, then call for Dash
             dashCooldown = true;
+            DashPointerAva.SetActive(false);
+            DashPointerNava.SetActive(true);
             Timer = cooldownTimer;
             GetComponent<PlayerDash>().Dash();
             
@@ -72,6 +76,8 @@ public class CharacterController2D : MonoBehaviour
             if (Timer <= 0f)
             {
                 dashCooldown = false;
+                DashPointerAva.SetActive(true);
+                DashPointerNava.SetActive(false);
                 Debug.Log("Cooldown elapsed");
             }
         }
