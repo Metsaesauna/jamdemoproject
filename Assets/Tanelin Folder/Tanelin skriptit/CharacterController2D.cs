@@ -31,7 +31,7 @@ public class CharacterController2D : MonoBehaviour
     public float moveInput;
     public bool grounded;
     public bool dashCooldown = false;
-    public float cooldownTimer = 1.5f;
+    public float cooldownTimer = 1f;
     private float Timer;
     public GameObject DashPointerAva;
     public GameObject DashPointerNava;
