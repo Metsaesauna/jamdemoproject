@@ -9,6 +9,7 @@ public class SpotlightController : MonoBehaviour
     //define the floats and make them public for easy tweaking in editor
     public float xVelocityMultiplier = 1.5f;
     public float falloffMultiplier = 1.0f;
+    public float lightDampen = 5;
  
 
     //name these so we can get them from the gameobjects. Note that "Light2D" is different than "Light"
@@ -25,16 +26,22 @@ public class SpotlightController : MonoBehaviour
 
     }
 
+
     // Update is called once per frame
     void Update()
     {
+
+        if (lightDampen > 1)
+        {
+            lightDampen -= 1 * Time.deltaTime;
+        }
         //calculate the new intensity using the velocity of the player. Keep it in a range of 1-100
         float xVelocity = playerRB2D.velocity.x;
-        float adjustedFalloff = Mathf.Clamp(Mathf.Abs(xVelocity) * xVelocityMultiplier * falloffMultiplier, 1f, 100f);
+        // float adjustedFalloff = Mathf.Clamp(Mathf.Abs(xVelocity) * xVelocityMultiplier * falloffMultiplier, 1f, 100f); adjustedFalloff + lightDampen;
 
 
         //adjust the specific slider on the spotlight
-        spotlight.shapeLightFalloffSize = adjustedFalloff;
+        spotlight.shapeLightFalloffSize = Mathf.Abs(xVelocity) + lightDampen;
         
     }
 

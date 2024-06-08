@@ -35,13 +35,14 @@ public class CharacterController2D : MonoBehaviour
     private float Timer;
     public GameObject DashPointerAva;
     public GameObject DashPointerNava;
+    private float Dampener;
     
     
     private void Awake()
     {
         boxCollider = GetComponent<BoxCollider2D>();
         rb2d = GetComponent<Rigidbody2D>();
-        
+        Dampener = GetComponent<SpotlightController>().lightDampen;
         
     }
     
@@ -64,6 +65,7 @@ public class CharacterController2D : MonoBehaviour
             DashPointerAva.SetActive(false);
             DashPointerNava.SetActive(true);
             Timer = cooldownTimer;
+
             GetComponent<PlayerDash>().Dash();
             
         }

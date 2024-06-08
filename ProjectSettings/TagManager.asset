@@ -8,6 +8,7 @@ TagManager:
   - Blade
   - EnemyPenis
   - kikeli
+  - RotateObject
   layers:
   - Default
   - TransparentFX

@@ -18,6 +18,8 @@ public class PlayerDash : MonoBehaviour
     public float DashStartedTime;
     public AudioClip dashAudio;
     public AudioSource playerSource;
+    private GameObject dashPointerAva;
+    private GameObject dashPointerNava;
     
     private void Awake()
     {
@@ -26,6 +28,8 @@ public class PlayerDash : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         moveScript = GetComponent<CharacterController2D>();
         playerSource = GetComponent<AudioSource>();
+        dashPointerNava = GetComponent<CharacterController2D>().DashPointerNava;
+        dashPointerAva = GetComponent<CharacterController2D>().DashPointerAva;
     }
     public void Dash()
     {
@@ -51,6 +55,7 @@ public class PlayerDash : MonoBehaviour
             //we add velocity based on dashforce
             rb2d.velocity = new Vector2(1,1) * rotation * DashForce;
             
+
         }
         else
         {
@@ -75,6 +80,8 @@ public class PlayerDash : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             GetComponent<CharacterController2D>().dashCooldown = false;
+            dashPointerAva.SetActive(true);
+            dashPointerNava.SetActive(false);
             Destroy(collision.gameObject); // Destroy the enemy GameObject
         }
     }
