@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 6300210744181622508}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: Enemy
+  m_TagString: EnemyRanged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -465,7 +465,6 @@ GameObject:
   - component: {fileID: 6786586295378919564}
   - component: {fileID: 1605663368002061023}
   - component: {fileID: 6807882151510004700}
-  - component: {fileID: 1501615462186647345}
   - component: {fileID: 7405085518770202808}
   m_Layer: 0
   m_Name: GameObject
@@ -606,22 +605,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5855153, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1501615462186647345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8596545979126170284}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b1fabd65789812448aa79e9f730663f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  BulletPrefab: {fileID: 6863281688722989280, guid: 6485f56137b742f48b5f650f6623e720, type: 3}
-  shootPoint: {fileID: 3777086783010516513}
-  fireRate: 3
 --- !u!114 &7405085518770202808
 MonoBehaviour:
   m_ObjectHideFlags: 0

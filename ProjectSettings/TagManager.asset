@@ -9,6 +9,9 @@ TagManager:
   - EnemyPenis
   - kikeli
   - RotateObject
+  - EnemyMelee
+  - EnemyRanged
+  - EnemySeppo
   layers:
   - Default
   - TransparentFX

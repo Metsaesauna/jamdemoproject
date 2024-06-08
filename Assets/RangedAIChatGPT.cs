@@ -54,6 +54,8 @@ public class RangedAIChatGPT : MonoBehaviour
 
     void Shoot()
     {
+
+        Debug.Log("Shoot Point Position: " + shootPoint.position);
         // Instantiate the projectile at the shoot point
         GameObject newProjectile = Instantiate(BulletPrefab, shootPoint.position, shootPoint.rotation);
 
