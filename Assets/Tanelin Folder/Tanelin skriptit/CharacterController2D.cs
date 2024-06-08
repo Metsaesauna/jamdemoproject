@@ -35,6 +35,7 @@ public class CharacterController2D : MonoBehaviour
     private float Timer;
     public GameObject DashPointerAva;
     public GameObject DashPointerNava;
+    private bool hasResetOnLand = false;
     private float Dampener;
     
     
@@ -122,12 +123,19 @@ public class CharacterController2D : MonoBehaviour
         {
             //we see ground! grounded is true
             grounded = true;
-            
+            // we check if we have reset the y velocity during this landing. if we have not, we reset it.
+            if (hasResetOnLand == false)
+            {
+                velocity.y = 0;
+                hasResetOnLand = true;
+                return;
+            }
         }
         else 
         {
             //We set the grounded bool to false if no ground
             grounded = false;
+            hasResetOnLand = false;
         }
     }
 

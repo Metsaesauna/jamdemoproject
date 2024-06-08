@@ -14,7 +14,7 @@ public class PlayerDash : MonoBehaviour
     public float DashForce = 50;
     public Vector2 rotation;
     private CharacterController2D moveScript;
-    public float DashLength = 0.1f;
+    public float DashLength = 0.15f;
     public float DashStartedTime;
     public AudioClip meleeDie;
     public AudioClip rangedDie;
