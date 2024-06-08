@@ -41,7 +41,8 @@ public class PlayerDash : MonoBehaviour
         //find mouse position and translate into 2D direction
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
         rotation = ((Vector2)mousePos - (Vector2)transform.position).normalized;
-        
+        playerSource.Play(0);
+        GetComponent<SpotlightController>().lightDampen += 3;
 
 
     }
@@ -82,7 +83,7 @@ public class PlayerDash : MonoBehaviour
             GetComponent<CharacterController2D>().dashCooldown = false;
             dashPointerAva.SetActive(true);
             dashPointerNava.SetActive(false);
-            Destroy(collision.gameObject); // Destroy the enemy GameObject
+            // Destroy(collision.gameObject); // Destroy the enemy GameObject
         }
     }
 }
