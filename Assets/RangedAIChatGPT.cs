@@ -9,7 +9,7 @@ public class RangedAIChatGPT : MonoBehaviour
 
     public GameObject BulletPrefab;
     public Transform shootPoint;
-    public float fireRate = 1f;
+    public float fireRate = 0.5f;
 
     private float nextFireTime;
 
@@ -19,7 +19,7 @@ public class RangedAIChatGPT : MonoBehaviour
         nextFireTime = Time.time;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         // Check if it's time to fire and if the player reference is not null (player is in range).
         if (Time.time >= nextFireTime && Player != null)

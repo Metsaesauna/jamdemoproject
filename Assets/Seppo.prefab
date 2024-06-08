@@ -59,8 +59,8 @@ Transform:
   m_GameObject: {fileID: 3241235908273850756}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -491.62, y: -78.84, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -535.46, y: -70.985, z: 0}
+  m_LocalScale: {x: 0.4548212, y: 0.4548212, z: 0.4548212}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1818274787014486305}
@@ -116,7 +116,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 9.273392, y: 14.806892}
+  m_Offset: {x: -80.41939, y: 14.806892}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -127,7 +127,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 74.65286, y: 30.613785}
+  m_Size: {x: 254.03842, y: 30.613785}
   m_EdgeRadius: 0
 --- !u!82 &6101278171583723497
 AudioSource:
@@ -237,9 +237,10 @@ GameObject:
   - component: {fileID: 2512112175095082797}
   - component: {fileID: 8044886880591177446}
   - component: {fileID: 1882118175513544121}
+  - component: {fileID: 2439094347016130568}
   m_Layer: 0
   m_Name: Sprite
-  m_TagString: Enemy
+  m_TagString: EnemySeppo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -337,7 +338,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 2
 --- !u!61 &1882118175513544121
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -370,7 +371,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.5550236, y: -2.5257823}
+  m_Offset: {x: -0.8665954, y: -0.11633277}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -381,5 +382,18 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9865805, y: 0.9546523}
+  m_Size: {x: 0.23882216, y: 5.7735515}
   m_EdgeRadius: 0
+--- !u!114 &2439094347016130568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5978545341980420388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f94c7dfea262f8a418729a364cf4e8f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flipInterval: 0.1

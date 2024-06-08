@@ -39,7 +39,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 682450410250430186}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 5b4c823cd2f435844a3baba7231cf7c0, type: 2}
   m_audioClip: {fileID: 8300000, guid: fd722a10d84ad3d47a09379d4493b740, type: 3}
@@ -222,7 +222,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.1484947, y: 0.24976182}
+  m_Offset: {x: 2.1392822, y: 2.1370182}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -233,7 +233,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 51.659195, y: 7.5178466}
+  m_Size: {x: 331.06738, y: 48.848743}
   m_EdgeRadius: 0
 --- !u!61 &8273034657285086344
 BoxCollider2D:
@@ -267,7 +267,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.58382475, y: 0.017258227}
+  m_Offset: {x: -0.049598694, y: 0.043007165}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -278,7 +278,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0964115, y: 1.0345163}
+  m_Size: {x: 2.3632584, y: 0.3238464}
   m_EdgeRadius: 0
 --- !u!114 &2802378553163479817
 MonoBehaviour:
@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 5521412637771426234}
   m_Layer: 0
   m_Name: enemy fly
-  m_TagString: Untagged
+  m_TagString: EnemyMelee
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -484,7 +484,7 @@ GameObject:
   - component: {fileID: 7141406559696104938}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Enemy
+  m_TagString: EnemyMelee
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -594,7 +594,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6883561977491038302}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -664,7 +664,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.3602891, y: -0.0014759004}
+  m_Offset: {x: -0.3602891, y: 0.055171758}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -675,7 +675,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.6943784, y: 0.9970481}
+  m_Size: {x: 2.6943784, y: 0.43057185}
   m_EdgeRadius: 0
 --- !u!1 &6973657262394227747
 GameObject:

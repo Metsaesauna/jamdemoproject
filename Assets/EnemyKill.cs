@@ -26,18 +26,5 @@ public class EnemyKill : MonoBehaviour
         Debug.Log("Vihu Osuu Pelaajaan");
         //SceneManager.LoadScene("GameOver");
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-
-
-        //If we hit an enemy while dashing, we reset the dash cooldown. Then we destroy the enemy we hit.
-        if (collision.gameObject.CompareTag("Player"))
-        {
-
-            Destroy(gameObject); // Destroy self
-
-
-        }
-
-    }
+    
 }

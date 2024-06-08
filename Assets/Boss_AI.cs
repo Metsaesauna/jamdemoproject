@@ -23,6 +23,8 @@ public class EnemyMovement : MonoBehaviour
 
     void Update()
     {
+
+
         // Check if it's time to fire and if the player reference is not null (player is in range).
         if (Time.time >= nextFireTime && Player != null)
         {
