@@ -546,8 +546,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.003799975, y: 0.0059999824, z: 0}
-    m_Extent: {x: 1.0025, y: 0.9981, z: 0}
+    m_Center: {x: -0.000100016594, y: 0.0055000186, z: 0}
+    m_Extent: {x: 0.9936, y: 1.0006001, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -602,9 +602,9 @@ GameObject:
   - component: {fileID: 2109637773554790794}
   - component: {fileID: 8465439497014349858}
   - component: {fileID: 5617459133111809924}
-  - component: {fileID: 8529023954225294021}
   - component: {fileID: 732439067603107368}
   - component: {fileID: 7196996628357106704}
+  - component: {fileID: 1870223469663012860}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -729,27 +729,6 @@ MonoBehaviour:
   cooldownTimer: 1.5
   DashPointerAva: {fileID: 2595828877658233149}
   DashPointerNava: {fileID: 3819445501510920096}
---- !u!114 &8529023954225294021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7966556273354376728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90f33f72d752b22478257c86b234a58a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DashDistance: 20
-  DashForce: 100
-  rotation: {x: 0, y: 0}
-  DashLength: 0.1
-  DashStartedTime: 0
-  meleeDie: {fileID: 8300000, guid: fd722a10d84ad3d47a09379d4493b740, type: 3}
-  rangedDie: {fileID: 8300000, guid: 661a1036bf4debb49afcc755429facab, type: 3}
-  seppoDie: {fileID: 8300000, guid: 3225dac5763e3214e9d56af67c60753c, type: 3}
-  playerSource: {fileID: 7196996628357106704}
 --- !u!114 &732439067603107368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -861,6 +840,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1870223469663012860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7966556273354376728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90f33f72d752b22478257c86b234a58a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DashDistance: 30
+  DashForce: 50
+  rotation: {x: 0, y: 0}
+  DashLength: 0.1
+  DashStartedTime: 0
+  meleeDie: {fileID: 8300000, guid: fd722a10d84ad3d47a09379d4493b740, type: 3}
+  rangedDie: {fileID: 8300000, guid: 661a1036bf4debb49afcc755429facab, type: 3}
+  seppoDie: {fileID: 8300000, guid: 3225dac5763e3214e9d56af67c60753c, type: 3}
+  playerSource: {fileID: 0}
 --- !u!1 &8140747554857530888
 GameObject:
   m_ObjectHideFlags: 0

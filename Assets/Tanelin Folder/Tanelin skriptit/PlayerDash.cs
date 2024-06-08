@@ -10,11 +10,11 @@ public class PlayerDash : MonoBehaviour
     private Rigidbody2D rb2d;
     private Camera cam;
     private Vector3 mousePos;
-    public float DashDistance = 20f;
-    public float DashForce = 50;
+    private float DashDistance = 50f;
+    private float DashForce = 80;
     public Vector2 rotation;
     private CharacterController2D moveScript;
-    public float DashLength = 0.15f;
+    public float DashLength = 0.18f;
     public float DashStartedTime;
     public AudioClip meleeDie;
     public AudioClip rangedDie;
@@ -38,7 +38,7 @@ public class PlayerDash : MonoBehaviour
        
         //check when dash started (was called) and save that time into a float
         DashStartedTime = Time.time;
-        //disable charcontroller so no other forces apply
+        //disable charcontroller so no other forces apply (outdated)
        // moveScript.enabled = false;
         //find mouse position and translate into 2D direction
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
@@ -63,9 +63,9 @@ public class PlayerDash : MonoBehaviour
         else
         {
 
-            //when over, we enable charcontroller again
-          //  moveScript.enabled = true;
-            
+            //when over, we enable charcontroller again (outdated)
+            //  moveScript.enabled = true;
+
         }
 
     }
