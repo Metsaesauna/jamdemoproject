@@ -6,7 +6,7 @@ using UnityEngine;
     public class EnemyMelee : MonoBehaviour
 {
 
-
+    // fuckin useless, mut en uskalla poistaa t. jones
     protected void OnTriggerEnter2D(UnityEngine.Collider2D collision)
     {
         if (collision.CompareTag("Blade"))

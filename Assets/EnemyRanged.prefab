@@ -380,7 +380,7 @@ GameObject:
   - component: {fileID: 7882366069565475793}
   - component: {fileID: 7509912413410282010}
   m_Layer: 0
-  m_Name: ranged_enemy
+  m_Name: ranged_enemy_sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
