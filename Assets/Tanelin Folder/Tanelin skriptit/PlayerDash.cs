@@ -16,7 +16,9 @@ public class PlayerDash : MonoBehaviour
     private CharacterController2D moveScript;
     public float DashLength = 0.1f;
     public float DashStartedTime;
-    public AudioClip dashAudio;
+    public AudioClip meleeDie;
+    public AudioClip rangedDie;
+    public AudioClip seppoDie;
     public AudioSource playerSource;
     private GameObject dashPointerAva;
     private GameObject dashPointerNava;
@@ -78,12 +80,29 @@ public class PlayerDash : MonoBehaviour
 
         }
         //If we hit an enemy while dashing, we reset the dash cooldown. Then we destroy the enemy we hit.
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("EnemyMelee"))
         {
             GetComponent<CharacterController2D>().dashCooldown = false;
             dashPointerAva.SetActive(true);
             dashPointerNava.SetActive(false);
-            // Destroy(collision.gameObject); // Destroy the enemy GameObject
+            Destroy(collision.gameObject); // Destroy the enemy GameObject
+            playerSource.PlayOneShot(meleeDie, 1f);
+        }
+        if (collision.gameObject.CompareTag("EnemyRanged"))
+        {
+            GetComponent<CharacterController2D>().dashCooldown = false;
+            dashPointerAva.SetActive(true);
+            dashPointerNava.SetActive(false);
+            Destroy(collision.gameObject); // Destroy the enemy GameObject
+            playerSource.PlayOneShot(rangedDie, 1f);
+        }
+        if (collision.gameObject.CompareTag("EnemySeppo"))
+        {
+            GetComponent<CharacterController2D>().dashCooldown = false;
+            dashPointerAva.SetActive(true);
+            dashPointerNava.SetActive(false);
+            Destroy(collision.gameObject); // Destroy the enemy GameObject
+            playerSource.PlayOneShot(seppoDie, 1f);
         }
     }
 }
