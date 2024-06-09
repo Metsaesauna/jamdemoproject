@@ -396,4 +396,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f94c7dfea262f8a418729a364cf4e8f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flipInterval: 0.1
+  flipInterval: -0.14
