@@ -8,13 +8,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 7dadd3bc1b27a5a4f9d7f1aeb2e9bb8d
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 4cb819722af2c444baa6bfb83abf4c9d
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 685457add3f789b479696ac7a12e2dce
   - enabled: 1
@@ -23,7 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameWin.unity
     guid: 0bf39885cf5f4f2408070f8e6628b1ff
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: f1be256b5ceb7234c949e744a4431023
+  - enabled: 1
+    path: Assets/Scenes/PlayTrans.unity
+    guid: 44ae5a5d8df4a994eb5d6fa95f762296
   m_configObjects: {}

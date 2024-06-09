@@ -15,7 +15,7 @@ public class SubMenuScript : MonoBehaviour
     private void StartGame()
     {
         Debug.Log("Starting game now");
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("PlayTrans");
     }
 
     private void ShowCredits()

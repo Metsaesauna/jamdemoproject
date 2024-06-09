@@ -8,9 +8,9 @@ public class EnemyKill : MonoBehaviour
 
     
 {
-    private bool isIngodmode;
+    public bool isIngodmode;
 
-    private void Start()
+    private void Update()
     {
         isIngodmode = GameObject.FindGameObjectWithTag("Player").GetComponent<GodModeToggle>().sequenceDetected;
        
@@ -30,11 +30,13 @@ public class EnemyKill : MonoBehaviour
         {
             return;
         }
-        //In case the player is not dashing, we kill the player.
+        //In case the player is in godmode, we do not kill player and instead return
         if (isIngodmode == true)
         {
+            Debug.Log("Pelaaja on godmodessa)");
             return;
         }
+        //In case the player is not dashing, we kill the player.
         Debug.Log("Vihu Osuu Pelaajaan");
         SceneManager.LoadScene("GameOver");
     }
