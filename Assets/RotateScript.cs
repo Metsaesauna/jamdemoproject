@@ -15,6 +15,11 @@ public class RotateScript : MonoBehaviour
         RotateTriangle(transform.GetChild(0), rotationSpeed);
         RotateTriangle(transform.GetChild(1), rotationSpeed);
         RotateTriangle(transform.GetChild(2), rotationSpeed);
+        RotateTriangle(transform.GetChild(3), rotationSpeed);
+        RotateTriangle(transform.GetChild(4), rotationSpeed);
+        RotateTriangle(transform.GetChild(5), rotationSpeed);
+        RotateTriangle(transform.GetChild(6), rotationSpeed);
+        RotateTriangle(transform.GetChild(7), rotationSpeed);
     }
     private void RotateTriangle(Transform triangle, float speed)
     {

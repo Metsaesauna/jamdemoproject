@@ -31,19 +31,18 @@ public class CharacterController2D : MonoBehaviour
     public float moveInput;
     public bool grounded;
     public bool dashCooldown = false;
-    public float cooldownTimer = 0.82f;
+    public float cooldownTimer = 0.5f;
     private float Timer;
     public GameObject DashPointerAva;
     public GameObject DashPointerNava;
     private bool hasResetOnLand = false;
-    private float Dampener;
-    
+
     
     private void Awake()
     {
         boxCollider = GetComponent<BoxCollider2D>();
         rb2d = GetComponent<Rigidbody2D>();
-        Dampener = GetComponent<SpotlightController>().lightDampen;
+       
         
     }
     
@@ -94,6 +93,7 @@ public class CharacterController2D : MonoBehaviour
                 // We apply vertical velocity (up)
                 velocity.y = Mathf.Sqrt(2 * jumpHeight * Mathf.Abs(Physics2D.gravity.y));
 
+
             }
 
         }
@@ -109,6 +109,7 @@ public class CharacterController2D : MonoBehaviour
         if (moveInput != 0)
         {
             velocity.x = Mathf.MoveTowards(velocity.x, MaxSpeed * moveInput, acceleration * Time.deltaTime);
+   
         }
         else
         {

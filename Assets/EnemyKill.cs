@@ -5,8 +5,16 @@ using UnityEngine.SceneManagement;
 
 //Authors: Taneli Niskanen & Jones Manninen
 public class EnemyKill : MonoBehaviour
-{
+
     
+{
+    private bool isIngodmode;
+
+    private void Start()
+    {
+        isIngodmode = GameObject.FindGameObjectWithTag("Player").GetComponent<GodModeToggle>().sequenceDetected;
+       
+    }
     //The enemy checks wheter or not they are hit.
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -23,8 +31,12 @@ public class EnemyKill : MonoBehaviour
             return;
         }
         //In case the player is not dashing, we kill the player.
+        if (isIngodmode == true)
+        {
+            return;
+        }
         Debug.Log("Vihu Osuu Pelaajaan");
-        //SceneManager.LoadScene("GameOver");
+        SceneManager.LoadScene("GameOver");
     }
     
 }

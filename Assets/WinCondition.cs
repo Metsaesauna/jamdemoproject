@@ -18,7 +18,7 @@ public class WinCondition : MonoBehaviour
             killzone.GetComponent<KillZone>().IsWin = true;
             Debug.Log("hihihhii kutittaa voitit pelin");
             
-            SceneManager.LoadScene("GameWin");
+            SceneManager.LoadScene("WinTrans");
 
         }
     }

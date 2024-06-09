@@ -10,7 +10,7 @@ public class PlayerDash : MonoBehaviour
     private Rigidbody2D rb2d;
     private Camera cam;
     private Vector3 mousePos;
-    private float DashDistance = 50f;
+    //private float DashDistance = 50f;
     private float DashForce = 80;
     public Vector2 rotation;
     private CharacterController2D moveScript;
@@ -94,7 +94,7 @@ public class PlayerDash : MonoBehaviour
             dashPointerAva.SetActive(true);
             dashPointerNava.SetActive(false);
             Destroy(collision.gameObject); // Destroy the enemy GameObject
-            playerSource.PlayOneShot(rangedDie, 1f);
+            playerSource.PlayOneShot(rangedDie, 0.6f);
         }
         if (collision.gameObject.CompareTag("EnemySeppo"))
         {
