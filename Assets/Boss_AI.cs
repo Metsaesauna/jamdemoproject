@@ -96,9 +96,6 @@ public class EnemyMovement : MonoBehaviour
         // Perform melee attack logic here
         Debug.Log("Performing melee attack on the player!");
 
-        // You can add melee attack animations, damage to the player, etc.
-        // Example:
-        // PlayerHealth playerHealth = Player.GetComponent<PlayerHealth>();
-        // playerHealth.TakeDamage(meleeDamage);
+
     }
 }
